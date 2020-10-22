@@ -108,5 +108,21 @@ namespace DataStructureDemo
                 return;
             }
         }
+
+        public int findData(int data)
+        {
+            int count = 0;
+            Node temp = this.head;
+            while (temp != null)
+            {
+                count++;
+                if (temp.data == data)
+                {
+                    return count;
+                }
+                temp = temp.next;
+            }
+            return -1;
+        }
     }
 }

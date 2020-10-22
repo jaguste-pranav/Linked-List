@@ -18,6 +18,7 @@ namespace DataStructureDemo
             list.removeFirstElement();
 
             list.display();
+            Console.WriteLine("The position is "+list.findData(111));
         }
     }
 }
