@@ -124,5 +124,28 @@ namespace DataStructureDemo
             }
             return -1;
         }
+
+        public void DeleteWithValue(int data)
+        {
+            int position = findData(data);
+            
+            Node temp = this.head;
+            if (position == -1)
+            {
+                Console.WriteLine("Data doesn't exist in the list");
+                return;
+            }
+            else
+            {
+                for(int i=0;i<position-2;i++)
+                { 
+                    temp = temp.next;
+                    Console.WriteLine("Data at node" + temp.data);
+                }
+                temp.next = temp.next.next;
+                Console.WriteLine("Data deleted: "+data);
+                return;
+            }
+        }
     }
 }

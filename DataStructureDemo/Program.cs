@@ -15,8 +15,13 @@ namespace DataStructureDemo
             list.insertInGivenPosition(2, 50);
             list.removeFirstElement();
             list.addAtEnd(89);
+            list.addAtEnd(6);
+            list.addAtEnd(75);
+            list.addAtEnd(24);
             list.removeFirstElement();
 
+            list.display();
+            list.DeleteWithValue(51);
             list.display();
             Console.WriteLine("The position is "+list.findData(111));
         }
