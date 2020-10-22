@@ -13,6 +13,7 @@ namespace DataStructureDemo
             list.addAtEnd(51);
 
             list.insertInGivenPosition(2, 50);
+            list.removeFirstElement();
             list.display();
         }
     }
